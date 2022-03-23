@@ -9,10 +9,6 @@ SELECT
     SUM (amount)
 FROM
 	payment
--- INNER JOIN
--- 	rental
--- ON
--- 	rental.rental_id = payment.rental_id
 GROUP BY
 	ROLLUP (
 		EXTRACT (YEAR FROM payment_date),
