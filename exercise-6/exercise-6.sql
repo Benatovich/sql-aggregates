@@ -5,7 +5,7 @@
 
 SELECT
 	email,
-    RANK() OVER (ORDER BY SUM(AMOUNT) DESC)
+    RANK() OVER (ORDER BY SUM(amount) DESC)
 FROM
 	customer
 INNER JOIN
