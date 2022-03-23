@@ -18,9 +18,6 @@ ON
 	film_category.film_id = film.film_id
 GROUP BY 
 	category.name 
--- ORDER BY
--- 	AVG ASC
--- -- LIMIT 10
 
 
 
